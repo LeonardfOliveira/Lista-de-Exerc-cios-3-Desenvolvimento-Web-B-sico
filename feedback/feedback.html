@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envie Seu Feedback - Visão Neural</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>Sua Opinião é Valiosa para Nós!</h1>
+            <p>Ajude-nos a aprimorar nossos serviços preenchendo o formulário abaixo.</p>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required aria-describedby="nomeHelp">
+                    <small id="nomeHelp" class="help-text">Por favor, insira seu nome completo.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required aria-describedby="emailHelp">
+                    <small id="emailHelp" class="help-text">Precisamos do seu e-mail para contato.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="endereco">Endereço (Opcional):</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro, cidade, estado" aria-describedby="enderecoHelp">
+                    <small id="enderecoHelp" class="help-text">Opcional, caso queira compartilhar.</small>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Seu Feedback</legend>
+                <div class="form-group">
+                    <label for="tipo">Tipo de Feedback:</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="critica">Crítica</option>
+                        <option value="duvida">Dúvida</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Sua Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva seu feedback aqui..." required aria-describedby="mensagemHelp"></textarea>
+                    <small id="mensagemHelp" class="help-text">Seja o mais detalhado possível.</small>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="submit-button">Enviar Feedback</button>
+        </form>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Visão Neural. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

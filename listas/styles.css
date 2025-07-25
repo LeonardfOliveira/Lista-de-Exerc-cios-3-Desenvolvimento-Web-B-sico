@@ -1,0 +1,101 @@
+/* Fonte padrão e layout do body */
+body {
+    background: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo dos títulos */
+h1 {
+    color: #eb0b0b;
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #f50b0b;
+    text-decoration: underline;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* Estilo das listas de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* <-- Centraliza os itens */
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto; /* Garante centralização */
+}
+
+nav a {
+    text-decoration: none;
+    color: #1976d2;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #0d47a1;
+}
+
+/* Estilo para listas ordenadas e não ordenadas dentro de sections */
+section ul,
+section ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+    color: #141414;
+    margin: 20px auto 0 auto;
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 5px 0;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+
+

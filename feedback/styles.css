@@ -1,0 +1,163 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte padrão */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    color: #222;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container para centralizar conteúdo */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header */
+.main-header {
+    background-color: #005f73; /* tom profissional e moderno */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgb(0 0 0 / 0.1);
+}
+
+.main-header h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.main-header p {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+/* Main content */
+.main-content {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 0.07);
+    margin-top: 30px;
+}
+
+/* Fieldsets */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px 30px 30px 30px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+legend {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    color: #0a9396;
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    padding: 12px 15px;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #005f73;
+    box-shadow: 0 0 5px #0a9396aa;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Texto de ajuda */
+.help-text {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Botão enviar */
+.submit-button {
+    background-color: #0a9396;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background-color: #005f73;
+    outline: none;
+}
+
+/* Footer */
+.main-footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #94d2bd;
+    text-align: center;
+    border-radius: 6px;
+    color: #055f50;
+    font-weight: 500;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .main-content {
+        padding: 20px 15px;
+    }
+
+    fieldset {
+        padding: 15px 20px 20px 20px;
+    }
+
+    .submit-button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
